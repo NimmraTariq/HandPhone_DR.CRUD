@@ -203,6 +203,7 @@
             this.btnUpdate.TabIndex = 17;
             this.btnUpdate.Text = "Mengubah data";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -212,6 +213,7 @@
             this.btnDelete.TabIndex = 18;
             this.btnDelete.Text = "Menghapus data";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // Form1
             // 
