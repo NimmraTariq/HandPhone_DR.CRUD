@@ -14,6 +14,8 @@ namespace CRUDMahasiswaADO
 {
     public partial class Form1 : Form
     {
+        SqlConnection conn;
+        string connectionString = "Data Source=DESKTOP-8BL3MIG\\NIMRA;Initial Catalog=DBAkademikADO;Integrated Security=True";
         public Form1()
         {
             InitializeComponent();
@@ -31,7 +33,18 @@ namespace CRUDMahasiswaADO
 
         private void btnConnect_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                if (conn.State == ConnectionState.Closed)
+                {
+                    conn.Open();
+                }
+                MessageBox.Show("Connected!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
     }
 }
