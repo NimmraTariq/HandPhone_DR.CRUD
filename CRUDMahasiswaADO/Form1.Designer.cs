@@ -193,6 +193,7 @@
             this.btnInsert.TabIndex = 16;
             this.btnInsert.Text = "Menambah data";
             this.btnInsert.UseVisualStyleBackColor = true;
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // btnUpdate
             // 
